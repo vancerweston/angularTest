@@ -1,0 +1,63 @@
+.card {
+  margin: 10px;
+  border: 1px solid black;
+}
+
+.cards-container {
+  padding: 5px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+}
+
+.searchBar {
+  grid-row: 1;
+  grid-column: 1/4;
+  text-align: center;
+}
+
+input {
+  width: 100%;
+  max-width: 50%;
+
+  padding: 8px 15px;
+  background: rgba(37, 37, 37, 0.2);
+  border: 0px solid #dbdbdb;
+}
+
+.member-container {
+  display: grid;
+  grid-template-areas: 'member-img member-name';
+  grid-template-columns: 40px 1fr auto;
+  grid-column-gap: 15px;
+  padding: 10px 15px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
+  transition: 0.3s;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.member-name {
+  text-align: left;
+  align-self: center;
+  width: 20px;
+  margin-left: 40%;
+}
+
+.member-img {
+  text-align: right;
+  align-self: center;
+}
+
+.member-container:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.3)
+}
+
+.pic {
+  align-self: center;
+}
+
+img {
+  border: 1px solid gray;
+}
