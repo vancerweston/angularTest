@@ -1,0 +1,28 @@
+<div class="grid-container">
+  <div class="back-btn" routerLink='/'>Back</div>
+  <div class="card">
+    <div class="pic">
+      <img src="{{ profile.picture.large }}" alt="" />
+    </div>
+    <div class="data">
+      <div class="name">
+        Name: <b>{{ profile.name.first }} {{ profile.name.last }}</b>
+      </div>
+      <br />
+      <div class="dob">
+        DOB:<b>{{ profile.dob.date | date: "longDate" }}</b>
+      </div>
+      <div class="address">
+        Address: <b>{{ profile.location.street.number }} {{profile.location.street.name}}</b><br />
+        <b>{{ profile.location.city }}, {{ profile.location.state }}
+        {{ profile.location.postcode }}</b>
+      </div>
+    </div>
+    <div class="phone">
+      Phone: <b>{{ profile.phone }}</b>
+    </div>
+    <div class="email">
+      Email: <b>{{ profile.email }}</b>
+    </div>
+  </div>
+</div>

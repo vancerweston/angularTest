@@ -1,17 +1,3 @@
-<div class='cards-container'>
-  <div class='searchBar'>
-    <input type="text" placeholder='Search By Name...' [(ngModel)]= "search">
-  </div>
-  <ng-container *ngFor="let person of members | search: search">
-    <div class="member-container">
-      <div class="member-img">
-        <img src="{{ person.picture.medium }}" alt="">
-      </div>
-      <div class="member-name">
-        {{ person.name.first | uppercase }} {{ person.name.last | uppercase}}
-      </div>
-    </div>
-  </ng-container>
-</div>
+<app-nav></app-nav>
 
 <router-outlet></router-outlet>
