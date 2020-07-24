@@ -10,7 +10,7 @@ export class AppComponent {
 
   search: String;
   searchGen: String;
-  searchAge: String;
+  searchAge: Number;
   searchHomeState: String;
   members: any;
 
