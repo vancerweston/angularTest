@@ -6,23 +6,23 @@
     </div>
     <div class="data">
       <div class="name">
-        Name: <b>{{ profile.name.first }} {{ profile.name.last }}</b>
+        <b>Name:</b> {{ profile.name.first | titlecase }} {{ profile.name.last | titlecase}}
       </div>
       <br />
       <div class="dob">
-        DOB:<b>{{ profile.dob.date | date: "longDate" }}</b>
+        <b>DOB:</b> {{ profile.dob.date | date: "longDate" }}
       </div>
       <div class="address">
-        Address: <b>{{ profile.location.street.number }} {{profile.location.street.name}}</b><br />
-        <b>{{ profile.location.city }}, {{ profile.location.state }}
-        {{ profile.location.postcode }}</b>
+        <b>Address:</b> {{ profile.location.street.number }} {{profile.location.street.name}}<br />
+        {{ profile.location.city }}, {{ profile.location.state }}
+        {{ profile.location.postcode }}
       </div>
     </div>
     <div class="phone">
-      Phone: <b>{{ profile.phone }}</b>
+      <b>Phone:</b> <br /> {{ profile.phone }}
     </div>
     <div class="email">
-      Email: <b>{{ profile.email }}</b>
+      <b>Email:</b> {{ profile.email }}
     </div>
   </div>
 </div>

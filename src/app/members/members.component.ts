@@ -11,6 +11,9 @@ import { ProfileService } from '../services/profile.service';
 export class MembersComponent implements OnInit {
 
   search: String;
+  searchGen: String;
+  searchAge: String;
+  searchHomeState: String;
   members: any;
 
   constructor(private apiService: ApiService, private profileService: ProfileService) { }

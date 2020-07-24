@@ -14,7 +14,7 @@
 .card {
   display: grid;
   grid-template-areas: 'member-img member-name';
-  grid-template-columns: 300px 200px auto;
+  grid-template-columns: 300px 200px 100px;
   grid-column-gap: 15px;
   padding: 10px 15px;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);

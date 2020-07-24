@@ -10,6 +10,9 @@ import { SearchPipe } from './search.pipe';
 import { MembersComponent } from './members/members.component';
 import { ProfileComponent } from './profile/profile.component';
 import { navComponent } from './nav/nav.component';
+import { SearchGenPipe } from './search-gen.pipe';
+import { SearchAgePipe } from './search-age.pipe';
+import { SearchHomeStatePipe } from './search-home-state.pipe';
 
 @NgModule({
   declarations: [
@@ -17,7 +20,10 @@ import { navComponent } from './nav/nav.component';
     SearchPipe,
     MembersComponent,
     ProfileComponent,
-    navComponent
+    navComponent,
+    SearchGenPipe,
+    SearchAgePipe,
+    SearchHomeStatePipe
   ],
   imports: [
     BrowserModule,

@@ -9,6 +9,9 @@ import { ApiService } from '../app/services/api.service';
 export class AppComponent {
 
   search: String;
+  searchGen: String;
+  searchAge: String;
+  searchHomeState: String;
   members: any;
 
   constructor() {}
