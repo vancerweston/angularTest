@@ -16,9 +16,6 @@ export class SearchAgePipe implements PipeTransform {
     return items.filter( it => {
       const age = it.dob.age;
       return age == searchAge;
-      // followed the pattern of the other pipes, didn't work because
-      // I think that it has to do with number vs string
-      // need to work on this more. Tried some things but need more work.
     })
   }
 
