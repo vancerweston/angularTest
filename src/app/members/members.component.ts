@@ -12,7 +12,7 @@ export class MembersComponent implements OnInit {
 
   search: String;
   searchGen: String;
-  searchAge: Number;
+  searchAge: String;
   searchHomeState: String;
   members: any;
 

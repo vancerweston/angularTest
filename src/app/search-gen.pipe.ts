@@ -14,8 +14,8 @@ export class SearchGenPipe implements PipeTransform {
     }
     searchGen = searchGen.toLowerCase();
     return items.filter( it => {
-      const gender = it.gender;
-      return gender.toLowerCase().includes(searchGen);
+      const email = it.email;
+      return email.toLowerCase().includes(searchGen);
     })
   }
 

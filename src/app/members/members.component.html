@@ -1,7 +1,7 @@
 <div class='cards-container'>
   <div class='searchBar'>
     <input type="text" placeholder='Search By Name...' [(ngModel)]= "search">
-    <input type="text" placeholder='Search By Gender...' [(ngModel)]= "searchGen">
+    <input type="text" placeholder='Search By Email...' [(ngModel)]= "searchGen">
     <input type="text" placeholder='Search By Age...' [(ngModel)]= "searchAge">
     <input type="text" placeholder='Search By Home State...' [(ngModel)]= "searchHomeState">
   </div>
@@ -12,7 +12,7 @@
       </div>
       <div class="member-name">
         Name: {{ person.name.first | titlecase }} {{ person.name.last | titlecase }} <br>
-        Gender: {{ person.gender | titlecase }} <br>
+        Email: {{ person.email }} <br>
         Age: {{ person.dob.age }} <br>
         Home State: {{ person.location.state | titlecase }}
       </div>
